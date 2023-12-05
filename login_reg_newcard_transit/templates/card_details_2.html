@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+</head>
+<body>
+    <h1>Card Purchase Successful!</h1>
+    <h2>Card Details:</h2>
+    <p><strong>Serial Number:</strong> {{ serial_no }}</p>
+    <p><strong>Balance:</strong> ${{ balance }}</p>
+    <p><strong>Monthly Pass:</strong> {{ "Yes" if monthly_pass else "No" }}</p>
+    <p><strong>Expiry Date:</strong> {{ expiry }}</p>
+</body>
+</html>

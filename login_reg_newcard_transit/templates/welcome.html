@@ -1,0 +1,23 @@
+<!-- welcome.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome, {{ first_name }}!</h1>
+    <form method="post">
+        <label for="transit_select">Select a transit:</label>
+        <select name="transit_select" id="transit_select">
+            {% for transit_option in transit_options %}
+                <option value="{{ transit_option }}">{{ transit_option }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Go</button>
+        <input type="submit" name="log_out" value="Log Out">
+    </form>
+</body>
+</html>
